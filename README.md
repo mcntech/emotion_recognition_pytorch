@@ -23,7 +23,7 @@ Instead, let’s swap out the first (three-channel) convolutional layer in the m
 
 Now that we have our base model, let’s apply transfer learning to classify emotions! This will involve a two-stage fine-tuning of our pre-trained “Gray Resnet” model.
 
-The first stage involves fine-tuning on the FER dataset. This will serve as an intermediate step before the model is trained on the “wild” data. The hope is that the model can learn to identify simple features from the FER dataset due to the coarse resolution of the images (48 x 48).
+The first stage involves fine-tuning on the FER dataset. This will serve as an intermediate step before the model is trained on the “wild” data so that the model can learn to identify features from the FER dataset.
 
 The second stage takes the model from the first stage and then further fine-tunes it on the “wild” data. Here, the model will extend the previous representation to learn from richer features present in the “wild” data.
 
