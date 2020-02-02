@@ -2,8 +2,7 @@
 
 Implementation for emotion detection using pytorch 
 
-### Objective
-To build a model that can detect and localize specific objects in images.
+We want to build a model that can detect and localize specific objects in images.
 
 The dataset is built by first using the xml files to get the filename, height, width, bounding box for each image (including those with multiple objects in an image). 
 
